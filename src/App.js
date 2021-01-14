@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-
+import CounterClassComponent from "./CounterClassComponent"
+import CounterFunctionalComponent from "./CounterFunctionalComponent"
 
 export default () =>{
   let var1 =0;
@@ -11,6 +12,8 @@ export default () =>{
       <button onClick={()=>{
         setCount (count +1)
       }}>add</button>
+      <CounterClassComponent/>
+      <CounterFunctionalComponent/>
     </div>
   );
 }
