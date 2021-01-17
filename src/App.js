@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import CounterClassComponent from "./CounterClassComponent"
 import CounterFunctionalComponent from "./CounterFunctionalComponent"
-
+import EX1style from "./components/ex1_style"
 export default () =>{
-  let var1 =0;
   const [count, setCount] = useState(0)
   return (
     <div>
@@ -14,6 +13,7 @@ export default () =>{
       }}>add</button>
       <CounterClassComponent/>
       <CounterFunctionalComponent/>
+      <EX1style/>
     </div>
   );
 }
