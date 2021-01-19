@@ -3,13 +3,15 @@ import "./style.css";
 
 export default function ex1_style() {
   const style = {
-    container: { backgroundColor: "green", height: 320 },
+    container: { backgroundColor: "green", height: 100 }
   };
   return (
-    
-   /*inline style */  
+
+    <div style={{backgroundColor:'red'}}>
+     
+   {/* inline style */}
    <div style={style.container}> 
-      <h1>inline style </h1>
+      <h1>inline style </h1></div>
     
      
      {/**class style */} 
