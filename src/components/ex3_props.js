@@ -3,7 +3,8 @@ import React from 'react'
 export default function ex3_props(props) {
     return (
         <div>
-            <h1>{props.count}</h1>
+           {props.showLabel&&<h1>CountLabel:</h1>}
+            <h1 style={{color:props.color}}>{props.count}</h1>
         </div>
     )
 }
